@@ -133,14 +133,34 @@ body {
 }
 
 /* ---------- Soft Skills ---------- */
-.soft-skill-box {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #f0f8ff;
-  border-radius: 10px;
-  font-size: 1rem;
+.soft-skills {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
 }
+
+.soft-skills h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--light-text);
+}
+
+.soft-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.soft-skills .skill-item {
+  padding: 0.6rem 1rem;
+  background-color: #e0f0ff;
+  border-radius: 1rem;
+  font-size: 0.95rem;
+  color: #004080;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
 
 /* ---------- Contact ---------- */
 .contact a {
