@@ -66,6 +66,33 @@ body {
   color: #555;
 }
 
+.education {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
+}
+
+.education h2 {
+  text-align: center;
+}
+
+.edu-entry {
+  margin-bottom: 1.5rem;
+}
+
+.edu-entry h3 {
+  font-size: 1.2rem;
+  color: var(--light-text);
+  margin-bottom: 0.3rem;
+}
+
+.edu-entry .edu-date {
+  font-weight: bold;
+  color: #1f3b73;
+}
+
+
 /* ---------- Section Layout ---------- */
 .skills,
 .soft-skills,
