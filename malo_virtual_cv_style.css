@@ -1,0 +1,115 @@
+/* style.css */
+
+/* ---------- Color Variables ---------- */
+:root {
+  --light-bg: #d6efff;
+  --light-text: #1f3b73;
+  --dark-bg: #1a1a1a;
+  --dark-text: #ffffff;
+  --accent: #5fa8d3;
+}
+
+/* ---------- Global Styles ---------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#modeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #d6efff, #e0f7ff);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* ---------- Section Layout ---------- */
+.skills,
+.soft-skills,
+.contact {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Skill Bars ---------- */
+.skill {
+  margin-bottom: 1rem;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 15px;
+  background-color: var(--accent);
+  border-radius: 25px;
+}
+
+/* ---------- Soft Skills ---------- */
+.soft-skill-box {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+/* ---------- Contact ---------- */
+.contact a {
+  color: var(--light-text);
+  text-decoration: none;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--accent);
+  color: white;
+}
