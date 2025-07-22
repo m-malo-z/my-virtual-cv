@@ -48,6 +48,14 @@ body {
   background: linear-gradient(to right, #d6efff, #e0f7ff);
 }
 
+.hero-intro {
+  max-width: 600px;
+  margin: 1rem auto 0;
+  font-size: 0.95rem; /* smaller font */
+  color: var(--light-text); /* blue font from your variable */
+  text-align: center;
+}
+
 .hero h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
