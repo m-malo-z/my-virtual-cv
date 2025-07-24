@@ -1,6 +1,6 @@
-/* style.css */
+/* ---------- Malo---------- */
 
-/* ---------- Color Variables ---------- */
+/* ---------- Color Vars---------- */
 :root {
   --light-bg: #d6efff;
   --light-text: #1f3b73;
@@ -9,16 +9,17 @@
   --accent: #5fa8d3;
 }
 
-/* ---------- Global  ---------- */
+/* ---------- Global ---------- */
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: var(--light-bg);
   color: var(--light-text);
   transition: background-color 0.3s, color 0.3s;
+  padding-top: 70px; /* adjust depending on navbar height */
 }
 
-/* ---------- Navbar ---------- */
+/* ---------- Navigate ---------- */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,14 +27,16 @@ body {
   padding: 1rem 2rem;
   background-color: var(--accent);
   color: white;
-}
-
-.navbar {
-  position: fixed;        /* fixes navbar at top */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;         /* stay above other content */
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -53,32 +56,14 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #cce7ff; /* lighter accent on hover */
+  color: #cce7ff;
 }
 
-body {
-  padding-top: 70px; /* adjust depending on navbar height */
-}
-
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* ---------- Hero Section ---------- */
+/* ---------- About Me ---------- */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
   background: linear-gradient(to right, #d6efff, #e0f7ff);
-}
-
-.hero-intro {
-  max-width: 600px;
-  margin: 1rem auto 0;
-  font-size: 0.95rem; /* smaller font */
-  color: var(--light-text); /* blue font from your variable */
-  text-align: center;
 }
 
 .hero h2 {
@@ -88,6 +73,14 @@ body {
 
 .hero p {
   font-size: 1.2rem;
+}
+
+.hero-intro {
+  max-width: 600px;
+  margin: 1rem auto 0;
+  font-size: 0.95rem;
+  color: var(--light-text);
+  text-align: center;
 }
 
 .profile-pic {
@@ -108,7 +101,7 @@ body {
   transform: scale(1.03);
 }
 
-
+/* ---------- Education ---------- */
 .education {
   padding: 2rem;
   max-width: 800px;
@@ -118,6 +111,14 @@ body {
 
 .education h2 {
   text-align: center;
+}
+
+.edu-entry {
+  background-color: #f0f8ff;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
 }
 
 .edu-entry h3 {
@@ -131,17 +132,7 @@ body {
   color: #1f3b73;
 }
 
-.edu-entry {
-  background-color: #f0f8ff;
-  padding: 1.2rem 1.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  margin-bottom: 2rem;
-}
-
-
-
-/* ---------- Section Layout ---------- */
+/* ---------- Technical Skills ---------- */
 .skills {
   padding: 2rem;
   max-width: 800px;
@@ -172,12 +163,12 @@ body {
 }
 
 .skill-item {
-  background-color: #f0f8ff;          /* light blue card color */
-  padding: 1rem 1.2rem;               
-  border-radius: 0.75rem;             
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* subtle shadow */
+  background-color: #f0f8ff;
+  padding: 1rem 1.2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   font-size: 0.95rem;
-  color: #004080;                     
+  color: #004080;
   transition: transform 0.2s ease;
 }
 
@@ -201,7 +192,7 @@ body {
   justify-content: flex-start;
 }
 
-/* Work Experience Section */
+/* ---------- Work Experience ---------- */
 .experience {
   padding: 2rem;
   max-width: 800px;
@@ -239,6 +230,7 @@ body {
   line-height: 1.6;
 }
 
+/* ---------- Projects ---------- */
 .projects {
   padding: 2rem;
   max-width: 900px;
@@ -253,16 +245,16 @@ body {
 
 .projects-grid {
   display: flex;
-  gap: 2rem; /* space between cards */
+  gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .project-card {
-  background-color: #f0f8ff; /* same card color */
+  background-color: #f0f8ff;
   border-radius: 0.75rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  width: 300px;  /* square-ish */
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,7 +269,7 @@ body {
 
 .project-image {
   width: 100%;
-  aspect-ratio: 1 / 1; /* forces square */
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -291,8 +283,6 @@ body {
   font-weight: 500;
 }
 
-
-
 /* ---------- Contact ---------- */
 .contact {
   padding: 2rem;
@@ -302,11 +292,79 @@ body {
   color: var(--light-text);
 }
 
-
 /* ---------- Footer ---------- */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: var(--accent);
   color: white;
+}
+
+/* ---------- for mobile phones ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  /* ---------- about me ---------- */
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* ---------- skills---------- */
+  .skills-grid,
+  .soft-skills-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .skill-item {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .education,
+  .skills,
+  .soft-skills,
+  .experience,
+  .projects,
+  .contact {
+    padding: 1.5rem 1rem;
+  }
+
+  footer {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
 }
