@@ -239,6 +239,58 @@ body {
   line-height: 1.6;
 }
 
+.projects {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--light-text);
+}
+
+.projects-grid {
+  display: flex;
+  gap: 2rem; /* space between cards */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #f0f8ff; /* same card color */
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 300px;  /* square-ish */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* forces square */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.project-desc {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--light-text);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 
 
 /* ---------- Contact ---------- */
