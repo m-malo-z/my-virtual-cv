@@ -12,7 +12,7 @@
 /* ---------- Global  ---------- */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: var(--light-bg);
   color: var(--light-text);
   transition: background-color 0.3s, color 0.3s;
