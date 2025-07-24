@@ -28,17 +28,42 @@ body {
   color: white;
 }
 
+.navbar {
+  position: fixed;        /* fixes navbar at top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;         /* stay above other content */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #cce7ff; /* lighter accent on hover */
+}
+
+body {
+  padding-top: 70px; /* adjust depending on navbar height */
+}
+
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-#modeToggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: white;
 }
 
 /* ---------- Hero Section ---------- */
@@ -93,10 +118,6 @@ body {
 
 .education h2 {
   text-align: center;
-}
-
-.edu-entry {
-  margin-bottom: 1.5rem;
 }
 
 .edu-entry h3 {
@@ -160,12 +181,6 @@ body {
   transition: transform 0.2s ease;
 }
 
-.skill-item:hover {
-  transform: scale(1.05);             /* zoom on hover */
-  cursor: default;
-}
-
-
 /* ---------- Soft Skills ---------- */
 .soft-skills {
   padding: 2rem;
@@ -184,21 +199,6 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: flex-start;
-}
-
-.soft-skills .skill-item {
-  background-color: #f0f8ff;          /* light blue card color */
-  padding: 1rem 1.2rem;               
-  border-radius: 0.75rem;             
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* subtle shadow */
-  font-size: 0.95rem;
-  color: #004080;                     
-  transition: transform 0.2s ease;
-}
-
-.soft-skills .skill-item:hover {
-  transform: scale(1.05);             /* zoom on hover */
-  cursor: default;
 }
 
 /* Work Experience Section */
