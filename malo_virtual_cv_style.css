@@ -9,7 +9,7 @@
   --accent: #5fa8d3;
 }
 
-/* ---------- Global Styles ---------- */
+/* ---------- Global  ---------- */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -151,13 +151,20 @@ body {
 }
 
 .skill-item {
-  padding: 0.6rem 1rem;
-  background-color: #e0f0ff;
-  border-radius: 1rem;
+  background-color: #f0f8ff;          /* light blue card color */
+  padding: 1rem 1.2rem;               
+  border-radius: 0.75rem;             
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* subtle shadow */
   font-size: 0.95rem;
-  color: #004080;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  color: #004080;                     
+  transition: transform 0.2s ease;
 }
+
+.skill-item:hover {
+  transform: scale(1.05);             /* zoom on hover */
+  cursor: default;
+}
+
 
 /* ---------- Soft Skills ---------- */
 .soft-skills {
@@ -180,12 +187,18 @@ body {
 }
 
 .soft-skills .skill-item {
-  padding: 0.6rem 1rem;
-  background-color: #e0f0ff;
-  border-radius: 1rem;
+  background-color: #f0f8ff;          /* light blue card color */
+  padding: 1rem 1.2rem;               
+  border-radius: 0.75rem;             
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* subtle shadow */
   font-size: 0.95rem;
-  color: #004080;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  color: #004080;                     
+  transition: transform 0.2s ease;
+}
+
+.soft-skills .skill-item:hover {
+  transform: scale(1.05);             /* zoom on hover */
+  cursor: default;
 }
 
 /* Work Experience Section */
