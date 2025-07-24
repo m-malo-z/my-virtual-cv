@@ -294,10 +294,14 @@ body {
 
 
 /* ---------- Contact ---------- */
-.contact a {
+.contact {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
   color: var(--light-text);
-  text-decoration: none;
 }
+
 
 /* ---------- Footer ---------- */
 footer {
